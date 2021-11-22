@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/gwy?serverTimezone=Asia/Shanghai
+    username: root
+    password: 15060126683a
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: showStatus
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+      table-prefix: gwy_
